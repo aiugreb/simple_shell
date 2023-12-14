@@ -51,7 +51,7 @@ ssize_t _getline(char **lineptr, size_t *n, FILE *stream)
 		if (position >= *n - 1)
 		{
 			newSize = *n * 2;
-			newBuffer = _realloc(*lineptr, newSize);
+			newBuffer = realloc(*lineptr, newSize);
 			if (newBuffer == NULL)
 				return (-1);
 			*lineptr = newBuffer;
