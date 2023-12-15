@@ -2,10 +2,11 @@
 
 
 /**
- * _strdup - duplicates a str
- * @str: str
+ * _strdup - duplicates a string
  *
- * Return: duplicated str
+ * @str: string
+ *
+ * Return: duplicated string
  */
 char *_strdup(const char *str)
 {
@@ -27,7 +28,9 @@ char *_strdup(const char *str)
 
 /**
  * _isnumber - check if a string is a number
+ *
  * @status: string to be checked
+ *
  * Return: void
  */
 int _isnumber(const char *status)
@@ -45,9 +48,11 @@ int _isnumber(const char *status)
 
 
 /**
- * _isdigit - check if charachter is number
+ * _isdigit - check charachter if is number
+ *
  * @c: charachter
- * Return: 1 if its a digit 0 otherwise
+ *
+ * Return: 1 if digit 0 otherwise
  */
 int _isdigit(int c)
 {

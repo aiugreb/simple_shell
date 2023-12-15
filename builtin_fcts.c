@@ -1,10 +1,13 @@
 #include "main.h"
 
 /**
- * exec_builtin - check if built in and then exec
- * @d: data struct input
+ * exec_builtin - check built in and exec
+ *
+ * @d: data input
+ *
  * Return: 1 if built in, 0 if not
- */
+*/
+
 int exec_builtin(data *d)
 {
 	builtin builtin[] = {
@@ -30,9 +33,9 @@ int exec_builtin(data *d)
 
 /**
  * builtin_exit - exits the shell
- * @d: data struct input
- * Return: void
- */
+ *
+ * @d: data input
+*/
 void builtin_exit(data *d)
 {
 	char *errorString = "./hsh: 1: exit: Illegal number: ";
@@ -57,10 +60,10 @@ void builtin_exit(data *d)
 }
 
 /**
- * builtin_env - prints the current environment
- * @d: data struct input
- * Return: void
- */
+ * builtin_env - prints the current envir
+ *
+ * @d: data input
+*/
 void builtin_env(data *d)
 {
 	int i = 0;
@@ -74,10 +77,9 @@ void builtin_env(data *d)
 	}
 }
 /**
- * builtin_setenv - Initialize a new environment variable,
- * or modify an existing one
+ * builtin_setenv - Initialize a new envir variable.
+ *
  * @d: data struct input
- * Return: void
  */
 
 void builtin_setenv(data *d)
@@ -93,9 +95,9 @@ void builtin_setenv(data *d)
 }
 
 /**
- * builtin_unsetenv - Remove an environment variable
- * @d: data struct input
- * Return: void
+ * builtin_unsetenv - Remove environ variable
+ *
+ * @d: data input
  */
 void builtin_unsetenv(data *d)
 {

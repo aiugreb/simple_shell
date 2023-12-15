@@ -1,12 +1,13 @@
 #include "main.h"
 
 /**
- * _strlen - returns the length of a string.
+ * _strlen - fct returns len.
  *
- * @s: setring
+ * @s: str
  *
- * Return: string length
+ * Return: string len
  */
+
 unsigned int _strlen(char *s)
 {
 	int len;
@@ -19,12 +20,12 @@ unsigned int _strlen(char *s)
 
 
 /**
- * _strcmp - compares two strings.
+ * _strcmp - compare two strs.
  *
- * @s1: string 1
- * @s2: string 2
+ * @s1: str 1
+ * @s2: str 2
  *
- * Return: comparison result
+ * Return: compare result
  */
 int _strcmp(const char *s1, const char *s2)
 {
@@ -39,17 +40,13 @@ int _strcmp(const char *s1, const char *s2)
 }
 
 /**
- * _strncmp - compares two strings.
+ * _strncmp - compare two strs.
  *
- * @s1: input const string
- * @s2: input const string
+ * @s1: input str
+ * @s2: input str 2
  * @n: input int
  *
- * Return: returns an integer indicating the result of the comparison,
- *	as follows:
- *		• 0, if the s1 and s2 are equal
- *		• a negative value if s1 is less than s2
- *		• a positive value if s1 is greater than s2
+ * Return: return (int)
  */
 int _strncmp(const char *s1, const char *s2, int n)
 {
@@ -72,14 +69,11 @@ int _strncmp(const char *s1, const char *s2, int n)
 }
 
 /**
- * *_strcpy - copies the string pointed to by src,
- * including the terminating null byte (\0),
- * to the buffer pointed to by dest.
- *
+ * *_strcpy - copies the string pointed
  * @dest: buffer
  * @src: input
  *
- * Return: the pointer to dest
+ * Return: ptr to dest
  */
 char *_strcpy(char *dest, const char *src)
 {
@@ -102,7 +96,7 @@ char *_strcpy(char *dest, const char *src)
  * @dest: result
  * @src: source
  *
- * Return: pointer to dest
+ * Return: ptr to dest
  */
 char *_strcat(char *dest, const char *src)
 {

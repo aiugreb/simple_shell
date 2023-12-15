@@ -2,9 +2,9 @@
 
 /**
  * start_process - start a new process
- * @d: data struct input
- * Return: void
- */
+ *
+ * @d: data input
+*/
 
 void start_process(data *d)
 {
@@ -28,10 +28,10 @@ free:
 }
 
 /**
- * handler_sigint - Signal handler function
+ * handler_sigint - Signal to handle the function
+ *
  * @signal: int input
- * Return: void
- */
+*/
 
 void handler_sigint(int signal)
 {
@@ -40,9 +40,10 @@ void handler_sigint(int signal)
 }
 
 /**
- * _exec - exectute cmd
- * @d: data struct input
- */
+ * _exec - execute command
+ *
+ * @d: data input
+*/
 
 void _exec(data *d)
 {

@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * _getenv - retrieves the value of an environment variable.
- * @name: string input
- * Return: value of an environment variable
+ * _getenv - get the environ variable's value.
+ *
+ * @name: str input
+ * Return: 0
  */
 
 char *_getenv(char *name)
@@ -29,8 +30,10 @@ char *_getenv(char *name)
 }
 
 /**
- * _which - locate the executable file associated with a given command.
- * @d: string input
+ * _which - get the exec file
+ *
+ * @d: str input
+ *
  * Return: void
  */
 int _which(data *d)
@@ -72,12 +75,14 @@ step_out:
 }
 
 /**
- * create_new_entry - Initialize a new environment variable,
- *  or modify an existing one
- * @name: variable name
- * @value: variable value
+ * create_new_entry - Initialize a new environ variable
+ *
+ * @name: name of the variable
+ * @value: value of the variable
+ *
  * Return: void
- */
+*/
+
 char *create_new_entry(char *name, char *value)
 {
 	size_t new_len = _strlen(name) + _strlen(value) + 2;
@@ -93,12 +98,13 @@ char *create_new_entry(char *name, char *value)
 	return (new_entry);
 }
 /**
- * _new_environ - Initialize a new environment variable,
- *  or modify an existing one
- * @name: variable name
- * @value: variable value
+ * _new_environ - Initialize a new environ variable
+ *
+ * @name: name of the variable
+ * @value: value of the variable
+ *
  * Return: void
- */
+*/
 char **_new_environ(char *name, char *value)
 {
 	int env_len = 0, i = 0;
@@ -144,12 +150,15 @@ char **_new_environ(char *name, char *value)
 }
 
 /**
- * _setenv - Initialize a new environment variable, or modify an existing one
+ * _setenv - Initialize a new environ variable
  * @d: to use the flag
- * @name: variable name
- * @value: variable value
+ *
+ * @name: name of the variable
+ * @value: value of the variable
+ *
  * Return: void
- */
+*/
+
 int _setenv(data *d, char *name, char *value)
 {
 	char **new_environ;

@@ -1,11 +1,12 @@
 #include "main.h"
 
 /**
- * main - init data
- * @argc: input size of @argv
- * @argv: input array of command line arguments
- * Return: Always 0.
- */
+ * main - initialize data
+ * @argc: input the @argv size
+ * @argv: input the array of the command line arguments
+ * Return: 0.
+*/
+
 int main(int argc, char **argv)
 {
 	data d;

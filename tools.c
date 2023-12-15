@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _printf - print a string to stander out put
+ * _printf - print a string
+ *
  * @str: string input
- * Return: void
  */
 void _printf(const char *str)
 {
@@ -17,9 +17,9 @@ void _printf(const char *str)
 }
 
 /**
- * free_array - free an array of pointers
- * @array: array of pointers
- * Return: void
+ * free_array - free arr of ptrs
+ *
+ * @array: arr of ptrs
  */
 void free_array(char **array)
 {
@@ -38,11 +38,12 @@ void free_array(char **array)
 }
 
 /**
- * split - split a given string by a delimiter
- * @d: data struct input
- * @delim: string input
- * Return: void
+ * split - split string by a delimiter
+ *
+ * @d: data input
+ * @delim: str input
  */
+
 void split(data *d, const char *delim)
 {
 	char *token;
@@ -80,10 +81,10 @@ free:
 }
 
 /**
- * init_data - init data
- * @d: data struct input
- * @shell_name: string input
- * Return: void
+ * init_data - initialize data
+ *
+ * @d: data input
+ * @shell_name: str input
  */
 
 void init_data(data *d, const char *shell_name)
@@ -96,10 +97,11 @@ void init_data(data *d, const char *shell_name)
 }
 
 /**
- * read_cmd - get the commend from the prompt and structure it into data struct
- * @d: data struct input
- * Return: void
+ * read_cmd - get the command into data struct
+ *
+ * @d: data input
  */
+
 void read_cmd(data *d)
 {
 	size_t n = 0;

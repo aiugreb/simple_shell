@@ -16,12 +16,12 @@
 extern char **environ;
 
 /**
- * struct data - holds the main data.
- * @av: Array of args
- * @command: User input
+ * struct data - holding data.
+ * @av: Array of arguments
+ * @command: input of the user
  * @shell_name: The name of the shell program
  * @exit_code: exit status
- * @flag_overwrite_env: 1 if user did exec setenv (use it to free memory)
+ * @flag_overwrite_env: 1 if the user execut setenv
  */
 typedef struct data
 {
@@ -33,9 +33,9 @@ typedef struct data
 } data;
 
 /**
- * struct builtin - builtin functions handling.
- * @cmd: built in cmd
- * @f: function of builtin cmd
+ * struct builtin - functions handling.
+ * @cmd: built in command
+ * @f: function of builtin command
  */
 typedef struct builtin
 {
@@ -59,7 +59,7 @@ void split(data *d, const char *delim);
 void init_data(data *d, const char *shell_name);
 void read_cmd(data *d);
 
-/* tools.c */
+/* tools2.c */
 void _perror(const char *str1, char *str2);
 void _trim(char *str);
 void *_realloc(void *ptr, unsigned int new_size);

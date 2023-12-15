@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * builtin_cd - change directory
- * @d: data struct input
- * Return: void
+ * builtin_cd -  built the cd command
+ *
+ * @d: data input
  */
 void builtin_cd(data *d)
 {
